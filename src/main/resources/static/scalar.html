@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalar API Reference</title>
+    <style>
+        html, body, #api-reference { height: 100%; margin: 0; }
+    </style>
+</head>
+<body>
+<div id="api-reference"></div>
+<script type="module">
+    import Scalar from 'https://cdn.jsdelivr.net/npm/@scalar/api-reference@latest/dist/browser/standalone.js';
+
+    Scalar.default('#api-reference', {
+        spec: {
+            url: '/api-docs'
+        },
+        layout: 'modern',
+        theme: 'default'
+    });
+</script>
+</body>
+</html>
